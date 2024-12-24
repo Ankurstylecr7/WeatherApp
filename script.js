@@ -23,9 +23,9 @@ async function getOutput(){
     ws.innerHTML = `Wind Speed: ${data.wind.speed} m/s`;
     topi.innerHTML = `Weather: ${data.weather[0].description}`.toUpperCase();
     if(data.main.temp>0){
-        img.src="Hot.png"
+        img.src="Hot.Png"
     }else{
-        img.src="Cold.png"
+        img.src="Cold.Png"
     }
     const currentDate = new Date();
     const year = currentDate.getFullYear();
