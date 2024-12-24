@@ -140,13 +140,31 @@ video{
 
 .limage{
     position: absolute;
-    top:70px;
-    left:1300px;
+    top:10%;
+    left:26%;
 }
 .fimage{
     position: absolute;
-    top:70px;
-    left:400px;
+    top:10%;
+    right:26%;
+}
+
+@media only screen and (min-width:943px) and (max-width:1325px){
+    .fimage{
+        right:15%
+    }
+    .limage{
+        left:15%;
+    }
+}
+
+@media only screen and (max-width:943px){
+    .fimage{
+        right:0%
+    }
+    .limage{
+        left:0%;
+    }
 }
 
 .img1{
