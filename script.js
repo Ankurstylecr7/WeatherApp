@@ -6,6 +6,8 @@ const search=document.querySelector(".search");
 const loc=document.querySelector(".location");
 const img=document.querySelector(".top-img");
 const date=document.getElementById("date");
+const foot1=document.querySelector(".foot1-data");
+const foot2=document.querySelector(".foot2-data");
 
 search.addEventListener("click",()=>{
     getOutput();
@@ -19,13 +21,15 @@ async function getOutput(){
     const data = await response.json();
     console.log(data);
     temp.innerHTML = `Temperature: ${data.main.temp}°C`;
+    foot1.innerHTML='<img src="sunny.gif" class="foot1-data" controls autoplay loop height="120px" width="130px"></img>';
+    foot2.innerHTML='<i class="fa-solid fa-wind fa-beat-fade"></i>';
     hum.innerHTML = `Humidity: ${data.main.humidity}%`;
     ws.innerHTML = `Wind Speed: ${data.wind.speed} m/s`;
     topi.innerHTML = `Weather: ${data.weather[0].description}`.toUpperCase();
     if(data.main.temp>0){
-        img.src="Hot.png"
+        img.innerHTML =`<i class="fa-solid fa-temperature-high fa-fade" style="color: #f93939;"></i>`;
     }else{
-        img.src="Cold.png"
+        img.innerHTML =`<i class="fa-solid fa-temperature-low fa-fade " style="color: #4d41fb; font-size:80px;"></i>`;
     }
     const currentDate = new Date();
     const year = currentDate.getFullYear();

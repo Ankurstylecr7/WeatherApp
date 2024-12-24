@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e280804628.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
     </head>
     <body>
         <div class="container">
@@ -20,24 +22,25 @@
             </navbar>
             <main class="main">
                 <div class="top">
-                    <img src="" class="top-img" width="230px" height="170px" alt="Loading">
+                    <div class="top1">
+                        <li><p class="top-img"></p></li>
+                        <li id="temp" ></li>
+                    </div>
                     <p class="top-text"></p>
                 </div>
                 <ul class="down">
                         <li id="date"></li>
-                        <li>|</li>
-                        <li id="temp"></li>
                 </ul>
             </main>
             <footer>
                 <div class="foot1">
-                    <video src="humidity.mp4" controls autoplay loop="on" height="120px" width="230px"></video>
+                    <p class="foot1-data"></p>
                     <div class="footdata">
                         <p class="humidity"></p>
                     </div>
                 </div>
                 <div class="foot2">
-                    <video src="windspeed.mp4" controls autoplay loop="on" height="120px" width="230px"></video>
+                    <p class="foot2-data"></p>
                     <div class="footdata">
                         <p class="windspeed"></p>
                     </div>
@@ -48,7 +51,6 @@
             <img src="Weather.png" alt="" class="img1">
         </div>
     </div>
-    
     
     <script src="script.js"></script>
 </body>
