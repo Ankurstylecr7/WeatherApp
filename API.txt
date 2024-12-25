@@ -1,0 +1,6 @@
+939fc24ec47b6bfba50cd931802b4b39
+
+
+
+
+https://api.openweathermap.org/data/2.5/weather?q=India&units=metric&,uk&appid=939fc24ec47b6bfba50cd931802b4b39

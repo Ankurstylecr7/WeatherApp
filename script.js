@@ -15,9 +15,9 @@ search.addEventListener("click",()=>{
 
 
 async function getOutput(){
-    const countryName=loc.value;
+    const Place=loc.value;
 
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${countryName}&units=metric&,uk&appid=939fc24ec47b6bfba50cd931802b4b39`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${Place}&units=metric&,uk&appid=939fc24ec47b6bfba50cd931802b4b39`)
     const data = await response.json();
     console.log(data);
     temp.innerHTML = `Temperature: ${data.main.temp}°C`;
